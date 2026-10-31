@@ -1252,7 +1252,7 @@
       ------------------------- */
       function initGoogleFormButtons() {
         const buttons = [$("#googleFormBtn"), $("#googleFormBtn2")].filter(Boolean);
-        const configured = GOOGLE_FORM_URL && GOOGLE_FORM_URL.startsWith("https://");
+        const configured = GOOGLE_FORM_URL && GOOGLE_FORM_URL.startsWith("https://docs.google.com/forms/d/e/1FAIpQLSdvcQFmMNJ1HCWB8adtMdhoCw_0LiiinGpHmSZ1O7XJLNe-pg/viewform?usp=publish-editor");
 
         buttons.forEach((button) => {
           button.classList.toggle("is-disabled", !configured);
